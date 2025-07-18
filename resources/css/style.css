@@ -34,6 +34,16 @@ html {
   }
 }
 
+@font-face {
+  font-family: 'Roboto-Regular';
+  src: url('/resources/fonts/Roboto/static/Roboto-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Palatino';
+  src: url('/resources/fonts/Noto_Sans/static/NotoSans-Regular.ttf') format('truetype');
+}
+
 /* Header */
 
 header {
@@ -45,7 +55,7 @@ header {
 }
 
 header .logo{
-  padding-left: 30px;
+  margin-left: 30px;
   color: #4a4a4a;
   font-size: 24px;
   font-family: 'Roboto', 'Mono', serif;
@@ -83,6 +93,7 @@ nav a {
 header .icon {
   width: 1rem;
   padding-left: .75rem;
+  margin-right: 30px;
 }
 
 header .mobile {
@@ -124,6 +135,13 @@ header .mobile {
 
 /* Sign Up Section */
 
+.banner{
+  background-image: url('/resources/images/banner-landingpage.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
 #sign-up-section {
   display: flex;
   justify-content: flex-start;
@@ -136,6 +154,9 @@ header .mobile {
   border: solid 1px #979797;
   border-radius: 4px;
   background-color: #9dc20b;
+  position: relative;
+  top: 170px;
+  left: 100px;
 }
 
 #sign-up-cta .content {
@@ -161,6 +182,7 @@ header .mobile {
 
 #sign-up-cta .cursive {
   font-family: "Damion", cursive;
+  margin-top: 32px;
 }
 
 #sign-up-cta .striking {
@@ -172,11 +194,11 @@ header .mobile {
 }
 
 .email span {
-  padding-top: 12px;
-  padding-bottom: 26px;
+  margin-top: 12px;
+  margin-bottom: 26px;
   color: white;
   font-size: 20px;
-  font-family: 'Roboto';
+  font-family: 'Roboto-Regular';
   line-height: 1.4;
 }
 
@@ -247,7 +269,7 @@ header .mobile {
   background-color: white;
 }
 
-.feature .image-container {
+.feature .image-container img {
   width: 90%;
   height: 65%;
   margin: 0 auto;
@@ -255,6 +277,7 @@ header .mobile {
 
 .feature h2 {
   padding-bottom: .5rem;
+  margin-top: 40px;
   font-size: 2.25rem;
   font-weight: bold;
   color: #4a4a4a;
@@ -265,6 +288,7 @@ header .mobile {
   line-height: 1.2;
   font-weight: 300;
   color: #4a4a4a;
+  margin-bottom: 40px;
 }
 
 @media only screen and (max-width: 890px) {
@@ -320,6 +344,7 @@ header .mobile {
 #filters-section .images-container {
   max-width: 100%;
   padding: 0 1%;
+  display: flex;
 }
 
 @media only screen and (max-width: 760px) {
@@ -355,7 +380,11 @@ header .mobile {
 /* Quotes Section */
 
 #quotes-section {
+  display: flex;
   background-color: #f3f3f3;
+  height: 160px;
+  align-items: center;
+  justify-content: center;
 }
 
 #quotes-section content {
