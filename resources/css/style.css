@@ -39,11 +39,6 @@ html {
   src: url('/resources/fonts/Roboto/static/Roboto-Regular.ttf') format('truetype');
 }
 
-@font-face {
-  font-family: 'Palatino';
-  src: url('/resources/fonts/Noto_Sans/static/NotoSans-Regular.ttf') format('truetype');
-}
-
 /* Header */
 
 header {
@@ -345,6 +340,11 @@ header .mobile {
   max-width: 100%;
   padding: 0 1%;
   display: flex;
+  justify-content: space-evenly;
+}
+
+#filters-section .image-container img {
+  width: 100%;
 }
 
 @media only screen and (max-width: 760px) {
@@ -371,8 +371,8 @@ header .mobile {
   #filters-section .images-container {
     padding: 0;
   }
-
-  #filters-section .extra {
+  
+  #filters-section .images-container .extra{
     display: none;
   }
 }
@@ -391,9 +391,9 @@ header .mobile {
   padding: 5rem 0;
 }
 
-#quotes-section quote {
+#quotes-section .quote {
   padding-right: 1.875rem;
-  font-family: "Palatino", serif;
+  font-family: "Palatino", Arial, serif;
   font-size: 1.875rem;
   line-height: 1.1;
   font-style: italic;
